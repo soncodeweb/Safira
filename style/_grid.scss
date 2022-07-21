@@ -1,0 +1,60 @@
+// tạo ra những class tương ứng
+@import 'media';
+$cols: 12;
+$gutter: 20px; // khoảng giữa 2 item là 20px
+// tạo 1 cái grid lưới cho html
+.row{
+    display: flex;
+    flex-wrap: wrap; // Hang
+//  for - from 1 to 12: --> 1 den 11
+//  for - from 1 through 12: --> 1 den 12
+    margin: - $gutter/2;
+    overflow: hidden;
+    @for $i from 1 through $cols { // for chỉ dùng cho scss
+        @include xs(){
+            .col-xs-#{$i} {
+                // border: 1px solid red;
+                padding: $gutter/2;
+                width: (100% / $cols) * $i;
+            }
+        }
+    }
+    @for $i from 1 through $cols { // for chỉ dùng cho scss
+        @include sm(){
+            .col-sm-#{$i} {
+                // border: 1px solid red;
+                padding: $gutter/2;
+                width: (100% / $cols) * $i;
+            }
+        }
+    }
+    @for $i from 1 through $cols { // for chỉ dùng cho scss
+        @include md(){
+            .col-md-#{$i} {
+                // border: 1px solid red;
+                padding: $gutter/2;
+                width: (100% / $cols) * $i;
+            }
+        }
+    }
+    @for $i from 1 through $cols { // for chỉ dùng cho scss
+        @include lg(){
+            .col-lg-#{$i} {
+                // border: 1px solid red;
+                padding: $gutter/2;
+                width: (100% / $cols) * $i;
+            }
+        }
+    }
+    @for $i from 1 through $cols { // for chỉ dùng cho scss
+        @include xl(){
+            .col-xl-#{$i} {
+                // border: 1px solid red;
+                padding: $gutter/2;
+                width: (100% / $cols) * $i;
+            }
+        }
+    }
+}
+
+        // Phần học

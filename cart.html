@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/cart.css" />
+    <link   rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style/owl.carousel.min.css" />
+    <link rel="stylesheet" href="style/owl.theme.default.min.css" />
+    <link rel="icon" href="http://demo.roadthemes.com/safira/wp-content/uploads/2020/04/cropped-roadthemes-avatar-32x32.jpg" sizes="32x32">
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+    <title>Cart - Safira</title>
+  </head>
+  <body>
+    
+     <header>
+      <div class="header-one">
+        <div class="container flex j-between a-center">
+          <div class="one left">
+            <nav>
+              <ul class="lang flex">
+                <li class="hover1">
+                  Lang <i class="fas fa-chevron-down"></i>
+                  <ul class="dropdown d1">
+                    <li><a href="#">ENG</a></li>
+                    <li class="crossbar"></li>
+                    <li><a href="#">FR</a></li>
+                  </ul>
+                </li>
+                <li>|</li>
+                <li class="hover2">
+                  Currency <i class="fas fa-chevron-down"></i>
+                  <ul class="dropdown d2">
+                    <li><a href="#">USD</a></li>
+                    <li class="crossbar"></li>
+                    <li><a href="#">UER</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="one right">
+            <nav>
+              <ul class="flex">
+                <li>
+                  <a href=""><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fas fa-rss"></i></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="header-two">
+        <div class="container flex j-between a-center">
+          <div class="bar">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div class="logo">
+            <a href="./index.html" onclick="window.location.assign('index.html')"
+              ><img src="./image/logo.png" alt=""/>
+          </a>
+          </div>
+          <div class="search-bar">
+            <div class="search-bar-wrap flex j-center a-center">
+              <div class="all flex a-center j-between">
+                <span class="All">All</span>
+                <i class="fas fa-chevron-down down"></i>
+                <ul class="dropdown_All">
+                  <li><a href="">All</a></li>
+                  <li>
+                    <a href="" class="dried">Dried beans</a>
+                    <ul class="dropdown_Diedbeans">
+                      <li><a href="">snack pack</a></li>
+                      <li><a href="">canned fruits</a></li>
+                      <li><a href="">Serveware</a></li>
+                      <li><a href="">chickpeas</a></li>
+                      <li><a href="">stewed</a></li>
+                      <li><a href="">vegetables pureed</a></li>
+                      <li><a href="">raw fruit</a></li>
+                      <li><a href="">dried fruits</a></li>
+                      <li><a href="">red kidney</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="">Allium</a></li>
+                  <li><a href="">Marrow</a></li>
+                  <li><a href="">Edible plant stem</a></li>
+                  <li><a href="">Red foods</a></li>
+                  <li><a href="">chickpea</a></li>
+                  <li><a href="">Cruciferous</a></li>
+                  <li><a href="">Green vegetables</a></li>
+                  <li><a href="">Fresh beans</a></li>
+                  <li><a href="">Leafy green</a></li>
+                </ul>
+              </div>
+              <input type="text" placeholder="Search product..." />
+              <div class="icon flex a-center">
+                <i class="fas fa-search"></i>
+              </div>
+            </div>
+          </div>
+          <nav class="login">
+            <ul class="flex a-center">
+              <li>
+                <a href="">LOGIN</a>
+                <span>/</span>
+                <a href="">SIGN UP</a>
+              </li>
+              <li>
+                <a class="icon" href="">
+                  <i class="far fa-heart"></i>
+                  <span class="count count-heart">0</span>
+                </a>
+              </li>
+              <li>
+                <a class="icon" href="">
+                  <i class="fa fa-shopping-cart"></i>
+                  <span class="count count-cart">0</span>
+                </a>
+                <div class="content_pane">
+                  <ul>
+                    <li>No products in the cart.</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="header-three">
+        <div class="container flex">
+          <nav class="cate-menu-wrap">
+            <div class="flex a-center">
+              <i class="fas fa-bars"></i>
+              <h3 class="all-cate">All Categories</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <ul class="dropdown-menu-cate">
+              <li>
+                <a href="">Healthy</a>
+                <i class="fas fa-chevron-right"></i>
+                <ul class="dropdown-healthy flex">
+                  <li><a href="">Baskets & Bins</a></li>
+                  <li><a href="">Asparagus</a></li>
+                  <li><a href="">Broccoli</a></li>
+                  <li><a href="">Asparagus</a></li>
+                  <li><a href="">Shallot</a></li>
+                  <li><a href="">Headboards & Footboards</a></li>
+                  <li><a href="">Sweet Patoto</a></li>
+                  <li><a href="">Onion</a></li>
+                  <li><a href="">Storage & Organization</a></li>
+                </ul>
+              </li>
+              <li><a href="">Marrow</a><i class="fas fa-chevron-right"></i></li>
+              <li><a href="">Allium</a><i class="fas fa-chevron-right"></i></li>
+              <li>
+                <a href="">Vitamins</a><i class="fas fa-chevron-right"></i>
+              </li>
+              <li>
+                <a href="">Chickpea</a><i class="fas fa-chevron-right"></i>
+              </li>
+              <li><a href="">Green Vegetables</a></li>
+              <li><a href="">Fresh Beans</a></li>
+              <li><a href="">Leafy Green</a></li>
+              <li><a href="">Cruciferous</a></li>
+              <li><a href="">Onion</a></li>
+              <li><a href="">More Categories</a></li>
+            </ul>
+          </nav>
+          <nav class="menu-wrap">
+            <ul class="menu flex a-center">
+              <li class="home">
+                <a href="" class="home"
+                  >Home <i class="fas fa-chevron-down"></i
+                ></a>
+                <ul class="dropdown-home flex">
+                  <li>
+                    <a href="">Demo Group 01</a>
+                    <ul class="dropdown-home-element-one">
+                      <li><a href="" class="organic">Organic 01</a></li>
+                      <li><a href="">Organic 02</a></li>
+                      <li><a href="">Organic 03</a></li>
+                      <li><a href="">Organic 04</a></li>
+                      <li><a href="">Cosmetic 01</a></li>
+                      <li><a href="">Cosmetic 02</a></li>
+                      <li><a href="">Cosmetic 03</a></li>
+                      <li><a href="">Cosmetic 04</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="">Demo Group 02</a>
+                    <ul class="dropdown-home-element-two">
+                      <li><a href="">Electronic 01</a></li>
+                      <li><a href="">Electronic 02</a></li>
+                      <li><a href="">Electronic 03</a></li>
+                      <li><a href="">Electronic 04</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="shop">
+                <a href="">Shop <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-home flex">
+                  <li>
+                    <a href="">Shop Layouts</a>
+                    <ul class="dropdown-home-element-one">
+                      <li><a href="">Sidebar Left</a></li>
+                      <li><a href="">Sidebar Right</a></li>
+                      <li><a href="">Full Width</a></li>
+                      <li><a href="">List View</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="">Shop Pages</a>
+                    <ul class="dropdown-home-element-two">
+                      <li><a href="">Category</a></li>
+                      <li><a href="">My account</a></li>
+                      <li><a href="">Wishlist</a></li>
+                      <li><a href="">Cart</a></li>
+                      <li><a href="">Checkout</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="">Product Types</a>
+                    <ul class="dropdown-home-element-two">
+                      <li><a href="">Grouped Product</a></li>
+                      <li><a href=""> Variable Product</a></li>
+                      <li><a href="">Simple Product</a></li>
+                      <li><a href=""> External Product</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="blog">
+                <a href="">Blog <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-home flex">
+                  <li>
+                    <a href=""> Blog Layouts</a>
+                    <ul class="dropdown-home-element-one">
+                      <li><a href="" class="organic">Sidebar Left</a></li>
+                      <li><a href="">Sidebar Right</a></li>
+                      <li><a href="">Large image</a></li>
+                      <li><a href="">Blog Grid</a></li>
+                      <li><a href="">No Sidebar</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="">Blog Pages</a>
+                    <ul class="dropdown-home-element-two">
+                      <li><a href="">Author</a></li>
+                      <li><a href="">Archives</a></li>
+                      <li><a href=""> Category</a></li>
+                      <li><a href="">Blog Tag</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="">Post Formats</a>
+                    <ul class="dropdown-home-element-two">
+                      <li><a href="">Image Format</a></li>
+                      <li><a href="">Gallery Format</a></li>
+                      <li><a href="">Audio Format</a></li>
+                      <li><a href="">Video Format</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="pages">
+                <a href="">Pages <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-home flex dropdown-page">
+                  <li><a href=""> Frequently Questions</a></li>
+                  <li><a href="">Privacy Policy</a></li>
+                  <li><a href="">About Us</a></li>
+                  <li><a href=""> Error 404 </a></li>
+                </ul>
+              </li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="header-four">
+        <div class="container flex j-between a-center">
+          <div class="logo-menu-wrap flex j-between a-center">
+            <div class="logo2">
+              <img
+                class="image-logo2"
+                src="./image/logo.png"
+                alt=""
+              />
+            </div>
+            <nav class="menu-wrap">
+              <ul class="menu flex a-center">
+                <li class="home">
+                  <a href="" class="home"
+                    >Home <i class="fas fa-chevron-down"></i
+                  ></a>
+                  <ul class="dropdown-home flex">
+                    <li>
+                      <a href="">Demo Group 01</a>
+                      <ul class="dropdown-home-element-one">
+                        <li><a href="" class="organic">Organic 01</a></li>
+                        <li><a href="">Organic 02</a></li>
+                        <li><a href="">Organic 03</a></li>
+                        <li><a href="">Organic 04</a></li>
+                        <li><a href="">Cosmetic 01</a></li>
+                        <li><a href="">Cosmetic 02</a></li>
+                        <li><a href="">Cosmetic 03</a></li>
+                        <li><a href="">Cosmetic 04</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="">Demo Group 02</a>
+                      <ul class="dropdown-home-element-two">
+                        <li><a href="">Electronic 01</a></li>
+                        <li><a href="">Electronic 02</a></li>
+                        <li><a href="">Electronic 03</a></li>
+                        <li><a href="">Electronic 04</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="shop">
+                  <a href="">Shop <i class="fas fa-chevron-down"></i></a>
+                  <ul class="dropdown-home flex">
+                    <li>
+                      <a href="">Shop Layouts</a>
+                      <ul class="dropdown-home-element-one">
+                        <li><a href="">Sidebar Left</a></li>
+                        <li><a href="">Sidebar Right</a></li>
+                        <li><a href="">Full Width</a></li>
+                        <li><a href="">List View</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="">Shop Pages</a>
+                      <ul class="dropdown-home-element-two">
+                        <li><a href="">Category</a></li>
+                        <li><a href="">My account</a></li>
+                        <li><a href="">Wishlist</a></li>
+                        <li><a href="">Cart</a></li>
+                        <li><a href="">Checkout</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="">Product Types</a>
+                      <ul class="dropdown-home-element-two">
+                        <li><a href="">Grouped Product</a></li>
+                        <li><a href=""> Variable Product</a></li>
+                        <li><a href="">Simple Product</a></li>
+                        <li><a href=""> External Product</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="blog">
+                  <a href="">Blog <i class="fas fa-chevron-down"></i></a>
+                  <ul class="dropdown-home flex">
+                    <li>
+                      <a href=""> Blog Layouts</a>
+                      <ul class="dropdown-home-element-one">
+                        <li><a href="" class="organic">Sidebar Left</a></li>
+                        <li><a href="">Sidebar Right</a></li>
+                        <li><a href="">Large image</a></li>
+                        <li><a href="">Blog Grid</a></li>
+                        <li><a href="">No Sidebar</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="">Blog Pages</a>
+                      <ul class="dropdown-home-element-two">
+                        <li><a href="">Author</a></li>
+                        <li><a href="">Archives</a></li>
+                        <li><a href=""> Category</a></li>
+                        <li><a href="">Blog Tag</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="">Post Formats</a>
+                      <ul class="dropdown-home-element-two">
+                        <li><a href="">Image Format</a></li>
+                        <li><a href="">Gallery Format</a></li>
+                        <li><a href="">Audio Format</a></li>
+                        <li><a href="">Video Format</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="pages">
+                  <a href="">Pages <i class="fas fa-chevron-down"></i></a>
+                  <ul class="dropdown-home flex dropdown-page">
+                    <li><a href=""> Frequently Questions</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href=""> Error 404 </a></li>
+                  </ul>
+                </li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="icons">
+            <nav class="login">
+              <ul class="flex a-center">
+                <li>
+                  <a class="icon" href="">
+                    <i class="far fa-heart"></i>
+                    <span class="count count-heart">0</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="icon" href="">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="count count-cart">0</span>
+                  </a>
+                  <div class="content_pane">
+                    <ul>
+                      <li>No products in the cart.</li>
+                    </ul>
+                    <div class="list-cart"> 
+                    </div> 
+                    <div class="total-wrapper">
+                      <span>Subtotal:</span>
+                      <span class="total">0.00$</span>
+                    </div>
+                    <div class="view-cart-and-checkout">
+                      <a href="">VIEW CART</a>
+                      <a href="">CHECKOUT</a>
+                    </div> 
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <span class="close">Close</span>
+        <div class="sidebar-search">
+          <input type="text" placeholder="Search product" />
+          <i class="fas fa-search"></i>
+        </div>
+        <nav>
+          <ul class="sidebar-menu">
+            <li>
+              <a href="">Home</a>
+              <i class="fas fa-chevron-right"></i>
+            </li>
+            <li>
+              <a href="">Shop</a>
+              <i class="fas fa-chevron-right"></i>
+            </li>
+            <li>
+              <a href="">Blog</a>
+              <i class="fas fa-chevron-right"></i>
+            </li>
+            <li>
+              <a href="">Pages</a>
+              <i class="fas fa-chevron-right"></i>
+            </li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <a href="#" class="totop">
+      <i class="fas fa-angle-up"></i>
+    </a>
+    <div class="cart-wrapper">
+      <div class="container">
+        <div class="title-cart-wrapper">
+          <img src="image/Cart.jpg" alt="">
+          <div class="title-cart">
+            <h3>Cart</h3>
+            <ul class="flex">
+              <li><a href="index.html">Home</a></li>
+              <li>/</li>
+              <li><a class="cart" href="">Cart</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="content-cart-wrapper">
+        <table class="content-cart">
+             <!-- <tr>
+              <td></td>
+              <td></td>
+              <td>PRODUCT</td>
+              <td>PRICE</td>
+              <td>QUANTITY</td>
+              <td>TOTAL</td>
+            </tr>
+            <tr>
+              <td class="close"><a href="">x</a></td>
+              <td><img src="http://demo.roadthemes.com/safira/wp-content/uploads/2020/04/3.jpg" alt=""></td>
+              <td><a href="">Bathua Saag/Leaves</a> </td>
+              <td><span class="price">$115.00</span></td>
+              <td><input type="number" step="1" min="0" value="1"></td>
+              <td><span class="total">$115.00</span></td>
+            </tr>
+            <tr>
+              <td colspan="6">
+                <button class="update">UPDATE CART</button>
+              </td>
+            </tr>   -->
+          </table> 
+          <div class="coupon-cartTotals-wrapper flex j-between">
+            <div class="coupon-wrapper">
+              <h3>Coupon</h3>
+              <p>Enter your coupon code if you have one.</p>
+              <input type="text"placeholder="Coupon code">
+              <br>
+              <button>APPLY COUPON</button>
+            </div>
+            <div class="cartTotals-wrapper">
+              <h3>Cart Totals</h3>
+              <table class="table-cartTotals">
+                <tr>
+                  <th>SUBTOTAL</th>
+                  <td class="subtotal"></td>
+                </tr>
+                <tr>
+                  <th>SHIPPING</th>
+                  <td>
+                      <ul  class="shipping">
+                        <li>
+                          <input type="radio" name="" id="">
+                          <span>Flat rate: <span>$4.00</span></span>
+                        </li>
+                        <li>
+                          <input type="radio" name="" id="">
+                          <span>Free Shipping</span>
+                        </li>
+                        <li>
+                          <input type="radio" name="" id="">
+                          <span>Local Pickup</span>
+                        </li>
+                      </ul>
+                      <p>Shipping to <strong>Vietnam.</strong></p>
+                      <a href="">Change address</a>
+                  </td>
+                </tr>
+                <tr>
+                  <th>TOTAL</th>
+                  <td class="total"></td>
+                </tr>
+              </table>
+              <div class="proceed-to-checkout">
+                <button>PROCEED TO CHECKOUT</button>
+              </div>
+            </div>  
+          </div>
+           <div class="cart-empty-wrapper"> 
+            <div class="cart-empty flex a-center">
+              <i class="fas fa-tablet-alt"></i>
+              <p>Your cart is currently empty.</p>
+            </div>
+            <div class="returnShop">
+              <a href="">RETURN TO SHOP</a>
+            </div>
+          </div>  
+        </div> 
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="footer-element1">
+          <div class="logo">
+            <a href="">
+              <img
+                src="./image/logo.png"
+                alt=""
+              />
+            </a>
+            <div class="about">
+              <p>
+                We are a team of designers and developers that create high
+                quality Magento, Prestashop, Opencart.
+              </p>
+            </div>
+            <div class="contact">
+              <ul>
+                <li><strong>Address:</strong> 4710-4890 Breckinridge USA</li>
+                <li><strong>Emali:</strong> support@plazathemes.com</li>
+                <li><strong>Call Us:</strong> 1-1001-234-5678</li>
+              </ul>
+            </div>
+          </div>
+          <nav class="information">
+            <div class="title-information"><h3>Information</h3></div>
+            <ul>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Wishlist</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Frequently Questions</a></li>
+            </ul>
+          </nav>
+          <nav class="category">
+            <div class="title-category"><h3>Categories</h3></div>
+            <ul>
+              <li><a href="">Lentil</a></li>
+              <li><a href="">Limes</a></li>
+              <li><a href="">Mangoes</a></li>
+              <li><a href="">Chickpea</a></li>
+              <li><a href="">Avocados</a></li>
+              <li><a href="">Cauliflower</a></li>
+            </ul>
+          </nav>
+          <div class="sign-up">
+            <div class="title-sign-up">
+              <h3>Sign Up To Newsletter</h3>
+            </div>
+            <div class="about"><p>Subscribe to get the latest news and updates from Safira</p></div>
+            <div class="search-email flex a-center">
+              <input type="text" placeholder="Your email address...">
+              <button class="subscribe">SUBSCRIBE</button>
+            </div>
+          </div>
+        </div>
+        <div class="crossbar"></div>
+        <div class="footer-element2 flex j-between">
+          <div class="copyright">
+            <p>Copyright © PlazaThemes. All Right Reserved.
+            <br>
+            Design by Plazathemes.com
+            </br>
+          </p>
+          </div>
+          <div class="credit">
+            <img src="http://demo.roadthemes.com/safira/wp-content/uploads/2020/05/icon_payment.png" alt="">
+          </div>
+        </div>
+      </div>
+    </footer> 
+    <div class="toast" >
+      <div class="toast-header">
+        <strong class="mr-auto text-primary">Toast Header</strong>
+        <small class="text-muted">5 mins ago</small>
+        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+      </div>
+      <div class="toast-body">
+        Some text inside the toast body
+      </div>
+    </div>
+  </div>
+  </body>
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script> -->
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script> -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
+  <script type="module" src="js/cart.js"></script>
+  <script type="module" src="js/newproducts.js"></script>
+  <script type="module" src="js/cart_pane.js"></script>
+  <script type="module" src="js/products-deal-of-the-weeks.js"></script>
+  <script src="js/from-our-blog.js"></script>
+  <script src="js/loadTime.js"></script>
+  <script src="js/addScroll.js"></script>
+  <script type="module" src="js/bestSeller.js"></script>
+  <script type="module" src="js/ourProducts.js"></script>
+  <script type="module" src="js/trendingProducts.js"></script>
+  <script src="js/brand.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="js/search_newProducts.js"></script>
+</html>

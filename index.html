@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/responsive.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./style/owl.theme.default.min.css" />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <title>Safira – Woocommerce Theme</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-one">
+        <div class="container flex j-between a-center">
+          <div class="one left">
+            <nav>
+              <ul class="lang flex">
+                <li class="hover1">
+                  Lang <i class="fas fa-chevron-down"></i>
+                  <ul class="dropdown d1">
+                    <li><a href="#">ENG</a></li>
+                    <li class="crossbar"></li>
+                    <li><a href="#">FR</a></li>
+                  </ul>
+                </li>
+                <li>|</li>
+                <li class="hover2">
+                  Currency <i class="fas fa-chevron-down"></i>
+                  <ul class="dropdown d2">
+                    <li><a href="#">USD</a></li>
+                    <li class="crossbar"></li>
+                    <li><a href="#">UER</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="one right">
+            <nav>
+              <ul class="flex">
+                <li>
+                  <a href=""><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fas fa-rss"></i></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="header-two">
+        <div class="container flex j-between a-center">
+          <div class="bar">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div class="logo">
+            <a href="index.html" onclick="window.location.assign('index.html')"
+              ><img
+                src="./image/logo.png"
+                alt=""
+            /></a>
+          </div>
+          <div class="search-bar">
+            <div class="search-bar-wrap flex j-center a-center">
+              <div class="all flex a-center j-between">
+                <span class="All">All</span>
+                <i class="fas fa-chevron-down down"></i>
+                <ul class="dropdown_All">
+                  <li><a href="">All</a></li>
+                  <li>
+                    <a href="" class="dried">Dried beans</a>
+                    <ul class="dropdown_Diedbeans">
+                      <li><a href="">snack pack</a></li>
+                      <li><a href="">canned fruits</a></li>
+                      <li><a href="">Serveware</a></li>
+                      <li><a href="">chickpeas</a></li>
+                      <li><a href="">stewed</a></li>
+                      <li><a href="">vegetables pureed</a></li>
+                      <li><a href="">raw fruit</a></li>
+                      <li><a href="">dried fruits</a></li>
+                      <li><a href="">red kidney</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="">Allium</a></li>
+                  <li><a href="">Marrow</a></li>
+                  <li><a href="">Edible plant stem</a></li>
+                  <li><a href="">Red foods</a></li>
+                  <li><a href="">chickpea</a></li>
+                  <li><a href="">Cruciferous</a></li>
+                  <li><a href="">Green vegetables</a></li>
+                  <li><a href="">Fresh beans</a></li>
+                  <li><a href="">Leafy green</a></li>
+                </ul>
+              </div>
+              <input type="text" placeholder="Search product..." id="searchProducts" />
+              <div class="icon flex a-center">
+                <i class="fas fa-search"></i>
+              </div>
+            </div>
+          </div>
+          <nav class="login">
+            <ul class="flex a-center">
+              <li>
+                <a href="">LOGIN</a>
+                <span>/</span>
+                <a href="">SIGN UP</a>
+              </li>
+              <li>
+                <a class="icon" href="">
+                  <i class="far fa-heart"></i>
+                  <span class="count count-heart">0</span>
+                </a>
+              </li>
+              <li>
+
+                <a class="icon" onclick="window.location.assign('cart.html')">
+                  <i class="fa fa-shopping-cart"></i>
+                  <span class="count count-cart">0</span>
+                </a>
+                <div class="content_pane">
+                  <ul>
+                    <li>No products in the cart.</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="header-three">
+        <div class="container flex">
+          <nav class="cate-menu-wrap">
+            <div class="flex a-center">
+              <i class="fas fa-bars"></i>
+              <h3 class="all-cate">All Categories</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <ul class="dropdown-menu-cate">
+              <li>
+                <a href="">Healthy</a>
+                <i class="fas fa-chevron-right"></i>
+                <ul class="dropdown-healthy flex">
+                  <li><a href="">Baskets & Bins</a></li>
+                  <li><a href="">Asparagus</a></li>
+                  <li><a href="">Broccoli</a></li>
+                  <li><a href="">Asparagus</a></li>
+                  <li><a href="">Shallot</a></li>
+                  <li><a href="">Headboards & Footboards</a></li>
+                  <li><a href="">Sweet Patoto</a></li>
+                  <li><a href="">Onion</a></li>
+                  <li><a href="">Storage & Organization</a></li>
+                </ul>
+              </li>
+              <li><a href="">Marrow</a><i class="fas fa-chevron-right"></i></li>
+              <li><a href="">Allium</a><i class="fas fa-chevron-right"></i></li>
+              <li>
+                <a href="">Vitamins</a><i class="fas fa-chevron-right"></i>
+              </li>
+              <li>
+                <a href="">Chickpea</a><i class="fas fa-chevron-right"></i>
+              </li>
+              <li><a href="">Green Vegetables</a></li>
+              <li><a href="">Fresh Beans</a></li>
+              <li><a href="">Leafy Green</a></li>
+              <li><a href="">Cruciferous</a></li>
+              <li><a href="">Onion</a></li>
+              <li><a href="">More Categories</a></li>
+            </ul>
+          </nav>
+          <nav class="menu-wrap">
+            <ul class="menu flex a-center">
+              <li class="home">
+                <a href="" class="home"
+                  >Home <i class="fas fa-chevron-down"></i
+                ></a>
+                <ul class="dropdown-home flex">
+                  <li>
+                    <a href="">Demo Group 01</a>
+                    <ul class="dropdown-home-element-one">
+                      <li><a href="" class="organic">Organic 01</a></li>
+                      <li><a href="">Organic 02</a></li>
+                      <li><a href="">Organic 03</a></li>
+                      <li><a href="">Organic 04</a></li>
+                      <li><a href="">Cosmetic 01</a></li>
+                      <li><a href="">Cosmetic 02</a></li>
+                      <li><a href="">Cosmetic 03</a></li>
+                      <li><a href="">Cosmetic 04</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="">Demo Group 02</a>
+                    <ul class="dropdown-home-element-two">
+                      <li><a href="">Electronic 01</a></li>
+                      <li><a href="">Electronic 02</a></li>
+                      <li><a href="">Electronic 03</a></li>
+                      <li><a href="">Electronic 04</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="shop">
+                <a href="">Shop <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-home flex">
+                  <li>
+                    <a href="">Shop Layouts</a>
+                    <ul class="dropdown-home-element-one">
+                      <li><a href="">Sidebar Left</a></li>
+                      <li><a href="">Sidebar Right</a></li>
+                      <li><a href="">Full Width</a></li>
+                      <li><a href="">List View</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="">Shop Pages</a>
+                    <ul class="dropdown-home-element-two">
+                      <li><a href="">Category</a></li>
+                      <li><a href="">My account</a></li>
+                      <li><a href="">Wishlist</a></li>
+                      <li><a href="">Cart</a></li>
+                      <li><a href="">Checkout</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="">Product Types</a>
+                    <ul class="dropdown-home-element-two">
+                      <li><a href="">Grouped Product</a></li>
+                      <li><a href=""> Variable Product</a></li>
+                      <li><a href="">Simple Product</a></li>
+                      <li><a href=""> External Product</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="blog">
+                <a href="">Blog <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-home flex">
+                  <li>
+                    <a href=""> Blog Layouts</a>
+                    <ul class="dropdown-home-element-one">
+                      <li><a href="" class="organic">Sidebar Left</a></li>
+                      <li><a href="">Sidebar Right</a></li>
+                      <li><a href="">Large image</a></li>
+                      <li><a href="">Blog Grid</a></li>
+                      <li><a href="">No Sidebar</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="">Blog Pages</a>
+                    <ul class="dropdown-home-element-two">
+                      <li><a href="">Author</a></li>
+                      <li><a href="">Archives</a></li>
+                      <li><a href=""> Category</a></li>
+                      <li><a href="">Blog Tag</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="">Post Formats</a>
+                    <ul class="dropdown-home-element-two">
+                      <li><a href="">Image Format</a></li>
+                      <li><a href="">Gallery Format</a></li>
+                      <li><a href="">Audio Format</a></li>
+                      <li><a href="">Video Format</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="pages">
+                <a href="">Pages <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-home flex dropdown-page">
+                  <li><a href=""> Frequently Questions</a></li>
+                  <li><a href="">Privacy Policy</a></li>
+                  <li><a href="">About Us</a></li>
+                  <li><a href=""> Error 404 </a></li>
+                </ul>
+              </li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="header-four">
+        <div class="container flex j-between a-center">
+          <div class="logo-menu-wrap flex j-between a-center">
+            <div class="logo2">
+              <img
+                class="image-logo2"
+                src="./image/logo.png"
+                alt=""
+              />
+            </div>
+            <nav class="menu-wrap">
+              <ul class="menu flex a-center">
+                <li class="home">
+                  <a href="" class="home"
+                    >Home <i class="fas fa-chevron-down"></i
+                  ></a>
+                  <ul class="dropdown-home flex">
+                    <li>
+                      <a href="">Demo Group 01</a>
+                      <ul class="dropdown-home-element-one">
+                        <li><a href="" class="organic">Organic 01</a></li>
+                        <li><a href="">Organic 02</a></li>
+                        <li><a href="">Organic 03</a></li>
+                        <li><a href="">Organic 04</a></li>
+                        <li><a href="">Cosmetic 01</a></li>
+                        <li><a href="">Cosmetic 02</a></li>
+                        <li><a href="">Cosmetic 03</a></li>
+                        <li><a href="">Cosmetic 04</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="">Demo Group 02</a>
+                      <ul class="dropdown-home-element-two">
+                        <li><a href="">Electronic 01</a></li>
+                        <li><a href="">Electronic 02</a></li>
+                        <li><a href="">Electronic 03</a></li>
+                        <li><a href="">Electronic 04</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="shop">
+                  <a href="">Shop <i class="fas fa-chevron-down"></i></a>
+                  <ul class="dropdown-home flex">
+                    <li>
+                      <a href="">Shop Layouts</a>
+                      <ul class="dropdown-home-element-one">
+                        <li><a href="">Sidebar Left</a></li>
+                        <li><a href="">Sidebar Right</a></li>
+                        <li><a href="">Full Width</a></li>
+                        <li><a href="">List View</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="">Shop Pages</a>
+                      <ul class="dropdown-home-element-two">
+                        <li><a href="">Category</a></li>
+                        <li><a href="">My account</a></li>
+                        <li><a href="">Wishlist</a></li>
+                        <li><a href="">Cart</a></li>
+                        <li><a href="">Checkout</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="">Product Types</a>
+                      <ul class="dropdown-home-element-two">
+                        <li><a href="">Grouped Product</a></li>
+                        <li><a href=""> Variable Product</a></li>
+                        <li><a href="">Simple Product</a></li>
+                        <li><a href=""> External Product</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="blog">
+                  <a href="">Blog <i class="fas fa-chevron-down"></i></a>
+                  <ul class="dropdown-home flex">
+                    <li>
+                      <a href=""> Blog Layouts</a>
+                      <ul class="dropdown-home-element-one">
+                        <li><a href="" class="organic">Sidebar Left</a></li>
+                        <li><a href="">Sidebar Right</a></li>
+                        <li><a href="">Large image</a></li>
+                        <li><a href="">Blog Grid</a></li>
+                        <li><a href="">No Sidebar</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="">Blog Pages</a>
+                      <ul class="dropdown-home-element-two">
+                        <li><a href="">Author</a></li>
+                        <li><a href="">Archives</a></li>
+                        <li><a href=""> Category</a></li>
+                        <li><a href="">Blog Tag</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="">Post Formats</a>
+                      <ul class="dropdown-home-element-two">
+                        <li><a href="">Image Format</a></li>
+                        <li><a href="">Gallery Format</a></li>
+                        <li><a href="">Audio Format</a></li>
+                        <li><a href="">Video Format</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="pages">
+                  <a href="">Pages <i class="fas fa-chevron-down"></i></a>
+                  <ul class="dropdown-home flex dropdown-page">
+                    <li><a href=""> Frequently Questions</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href=""> Error 404 </a></li>
+                  </ul>
+                </li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="icons">
+            <nav class="login">
+              <ul class="flex a-center">
+                <li>
+                  <a class="icon" href="">
+                    <i class="far fa-heart"></i>
+                    <span class="count count-heart">0</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="icon icon-cart" href="cart.html">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="count count-cart">0</span>
+                  </a>
+                  <div class="content_pane">
+                    <ul>
+                      <li>No products in the cart.</li>
+                    </ul>
+                    <!-- <div class="list-cart"> 
+                    </div> 
+                    <div class="total-wrapper">
+                      <span>Subtotal:</span>
+                      <span class="total">0.00$</span>
+                    </div>
+                    <div class="view-cart-and-checkout">
+                      <a href="">VIEW CART</a>
+                      <a href="">CHECKOUT</a>
+                    </div> -->
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <span class="close">Close</span>
+        <div class="sidebar-search">
+          <input type="text" placeholder="Search product" />
+          <i class="fas fa-search"></i>
+        </div>
+        <nav>
+          <ul class="sidebar-menu">
+            <li>
+              <a href="">Home</a>
+              <i class="fas fa-chevron-right"></i>
+            </li>
+            <li>
+              <a href="">Shop</a>
+              <i class="fas fa-chevron-right"></i>
+            </li>
+            <li>
+              <a href="">Blog</a>
+              <i class="fas fa-chevron-right"></i>
+            </li>
+            <li>
+              <a href="">Pages</a>
+              <i class="fas fa-chevron-right"></i>
+            </li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="intro-sliders"> 
+      <div class="container">
+        <div class="owl-carousel owl-theme slide">
+          <div class="item">
+            <div class="content-item">
+              <h2 class="name-item">Fresh Vegetables</h2>
+              <h3 class="item-type">Natural Farm Products</h3>
+              <p class="item-infor">
+                Widest range of farm-fresh Vegetables, Fruits & seasonal produce
+              </p>
+              <i class="shop-now">SHOP NOW</i>
+            </div>
+            <div class="image-item col-lg-12 col-xl-12">
+              <img src="image/Homeslider1-1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="item">
+            <div class="content-item">
+              <h2 class="name-item">Fresh Tomatoes</h2>
+              <h3 class="item-type">Natural Farm Products</h3>
+              <p class="item-infor">
+                Natural organic tomatoes make your health stronger. Put your
+                information here
+              </p>
+              <i class="shop-now">SHOP NOW</i>
+            </div>
+            <div class="image-item col-lg-12 col-xl-12">
+              <img src="image/Homeslider1-2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="item">
+            <div class="content-item">
+              <h2 class="name-item">Vegetables Big Sale</h2>
+              <h3 class="item-type">Fresh Farm Products</h3>
+              <p class="item-infor">
+                10% certifled-organic mix of fruit and veggies. Perfect for
+                weekly cooking and snacking!
+              </p>
+              <i class="shop-now">SHOP NOW</i>
+            </div>
+            <div class="image-item col-lg-12 col-xl-12">
+              <img src="image/Homeslider1-3.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <a href="#" class="totop">
+      <i class="fas fa-angle-up"></i>
+    </a>
+    <div class="policy-wrap">
+      <div class="container">
+        <div class="policy-content">
+          <div class="row">
+            <div class="col-sm-12 col-lg-6 col-xl-3">
+              <div class="item">
+                <i class="fa fa-plane"></i>
+                <h4>FREE SHIPPING</h4>
+                <h6>Free Shipping On All US Order Or Order Above $200</h6>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-6 col-xl-3">
+              <div class="item">
+                <i class="far fa-life-ring"></i>
+                <h4>SUPPORT 24/7</h4>
+                <h6>Contact Us 24 Hours A Day, 7 Days A Week</h6>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-6 col-xl-3">
+              <div class="item">
+                <i class="fas fa-undo"></i>
+                <h4>30 DAYS RETURN</h4>
+                <h6>Simply Return It Within 30 Days For An Exchange</h6>
+              </div>
+            </div>
+            <div class="col-sm-12 col-sm-12 col-lg-6 col-xl-3">
+              <div class="item">
+                <i class="far fa-credit-card"></i>
+                <h4>100% PAYMENT SECURE</h4>
+                <h6>We Ensure Secure Payment With PEV</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="new-products-wrap">
+      <div class="container">
+        <div class="title-newProducts flex a-center">
+          <h2>New Products</h2>
+          <h6>Recently added our store</h6>
+          <div class="bar-product"></div>
+          <nav class="menu-products flex j-between">
+            <li><a href="" class="vegetables">VEGETABLES</a></li>
+            <li><a href="">FRUITS</a></li>
+            <li><a href="">SALADS</a></li>
+            <li><a href="">FISH</a></li>
+          </nav>
+        </div>
+
+        <div class="content-newProducts-wrapper">
+          <div class="owl-carousel products">
+            <div class="newProduct-group-item1"></div>
+            <div class="newProduct-group-item2"></div>
+            <div class="newProduct-group-item3"></div>
+            <div class="newProduct-group-item4"></div>
+            <div class="newProduct-group-item5"></div>
+            <div class="newProduct-group-item6"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="search-newProducts-wrapper">
+      <div class="container">
+        <div class="search-newProducts">
+          <div class="exit">
+            <a href="">x</a>
+          </div>
+          <div id="search-newProducts" class="owl-carousel">
+            <!-- <div class="item">
+              <div class="product-images">
+                <div class="main-image">
+                  <img src="http://demo.roadthemes.com/safira/wp-content/uploads/2020/04/7.jpg" alt="">
+                </div>
+                <div class="sub-image owl-carousel owl-theme">
+                </div>
+              </div>
+              <div class="product-information">
+                <div class="name">Broccoli Local</div>
+                <div class="price">$100.00</div>
+                <a class="see-All-Features" href="">See all features</a>
+                <div class="addToCart-wrapper">
+                    <input type="number" value="1" step="1" min="1">
+                    <a href="">ADD TO CARD</a>
+                </div>
+                <div class="quick-desc">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                    exercitation ullamco,Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus</p>
+                </div>
+                <div class="share">
+                  <h3>SHARE</h3>
+                  <ul class="social-icons">
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>  
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>  
+                    <li><a href=""><i class="fab fa-pinterest"></i></a></li>  
+                    <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>  
+                    <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>  
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="product-images">
+                <div class="main-image">
+                  <img src="http://demo.roadthemes.com/safira/wp-content/uploads/2020/04/7.jpg" alt="">
+                </div>
+                <div class="sub-image">
+                  <img src="http://demo.roadthemes.com/safira/wp-content/uploads/2020/04/7.jpg" alt="">
+                  <img src="http://demo.roadthemes.com/safira/wp-content/uploads/2020/04/7.jpg" alt="">
+                  <img src="http://demo.roadthemes.com/safira/wp-content/uploads/2020/04/7.jpg" alt="">
+                  <img src="http://demo.roadthemes.com/safira/wp-content/uploads/2020/04/7.jpg" alt="">
+                </div>
+              </div>
+              <div class="product-information">
+                <div class="name">Broccoli Local</div>
+                <div class="price">$100.00</div>
+                <a class="see-All-Features" href="">See all features</a>
+                <div class="addToCart-wrapper">
+                    <input type="number" value="1" step="1" min="1">
+                    <a href="">ADD TO CARD</a>
+                </div>
+                <div class="quick-desc">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                    exercitation ullamco,Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus</p>
+                </div>
+                <div class="share">
+                  <h3>SHARE</h3>
+                  <ul class="social-icons">
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>  
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>  
+                    <li><a href=""><i class="fab fa-pinterest"></i></a></li>  
+                    <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>  
+                    <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>  
+                  </ul>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div> 
+    <div class="banner-with-text">
+      <div class="container">
+        <div class="row flex j-between">
+          <div class="banner-with-text-columm">
+            <img src="image/img_banner1-1-new.jpg" alt="" />
+            <div class="item">
+              <h3>Fresh Vegetables</h3>
+              <a href="">SHOP NOW <i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+          <div class="banner-with-text-columm">
+            <img src="image/img_banner1-2-new.jpg" alt="" />
+            <div class="item">
+              <h3>Fresh Vegetables</h3>
+              <a href="">SHOP NOW <i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="deals-of-the-weeks-wrap">
+      <div class="container">
+        <div class="title-deals-of-the-weeks">
+          <h2>Deals Of The Weeks</h2>
+          <h6>Recently added our store</h6>
+        </div>
+        <div class="products-deals-of-the-weeks">
+          <div class="owl-carousel products-deals">
+            <!-- <div class="item1"> 
+              <ul>
+                <li>
+                  <a href=""
+                    ><img
+                      src="http://demo.roadthemes.com/safira/wp-content/uploads/2020/04/5.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <div class="products-button">
+                    <ul class="flex j-between a-center">
+                      <li>
+                        <a href=""><i class="fas fa-shopping-cart"></i></a>
+                      </li>
+                      <li>
+                        <a href=""><i class="far fa-heart"></i></a>
+                      </li>
+                      <li>
+                        <a href=""><i class="fas fa-undo"></i></a>
+                      </li>
+                      <li>
+                        <a href=""><i class="fas fa-search"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sale">
+                    <span>Sale!</span>
+                  </div>
+                  <div class="countdown">
+                    <div class="time days">
+                      <span class="time-days">348</span>
+                      <span class="label">DAYS</span>
+                    </div>
+                    <div class="time hours">
+                      <span class="time-hours">13</span>
+                      <span class="label">HOURS</span>
+                    </div>
+                    <div class="time mins">
+                      <span class="time-mins">48</span>
+                      <span class="label">MINS</span>
+                    </div>
+                    <div class="time secs ">
+                      <span class="time-secs">06</span>
+                      <span class="label">SECS</span>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="">European Lemon Zest</a></li>
+                <li><a href="">Allium</a></li>
+                <li class="price">$70.00</li>
+              </ul>
+              </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="black-friday">
+      <div class="container">
+        <div class="item">
+          <h5>BLACK FRIDAY</h5>
+          <h2>SALE 50% OFF</h2>
+          <p>ALL VEGETABLES PRODUCTS</p>
+          <a href="">
+            <span>DISCOVER NOW</span>
+          </a>
+        </div>
+        <img src="image/black friday.jpg" alt="" />
+      </div>
+    </div>
+    <div class="bestSellers">
+      <div class="container">
+        <div class="title-bestSellers">
+          <h2>Best Sellers</h2>
+          <h6>Recently added our store</h6>
+        </div>
+        <div class="content-bestSellers flex">
+          <div id="bestSellers" class="owl-carousel">
+            <div class="bestSeller-group-item1"></div>
+            <div class="bestSeller-group-item2"></div>
+            <div class="bestSeller-group-item3"></div>
+          </div>
+          <div class="banner-with-text-bestSellers">
+            <a href=""
+              ><img
+                src="./image/block2-home3.jpg"
+                alt=""
+            /></a>
+            <div class="text-bestSellers">
+              <h3>Natural Food</h3>
+              <a href=""
+                >SHOP NOW
+                <span>
+                  <i class="fas fa-caret-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ourProducts-wrapper">
+      <div class="container">
+        <div class="title-ourProducts">
+          <h2>Our Products</h2>
+          <h6>Recently added our store</h6>
+        </div>
+        <div class="content-ourProducts">
+          <div id="ourProducts" class="owl-carousel"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="from-our-blog-wrap">
+      <div class="container">
+        <div class="title-from-our-blog">
+          <h2>From Our Blog</h2>
+          <h6>Our recent articles about Organic</h6>
+        </div>
+        <div class="owl-carousel content-from-our-blog"></div>
+      </div>
+    </div>
+    <div class="trendingProducts-wrapper">
+      <div class="container">
+        <div class="title-trendingProducts">
+          <h2>Trending Products</h2>
+          <h6>Recently added our store</h6>
+        </div>
+        <div class="content-trendingProducts">
+          <div id="trendingProducts" class="owl-carousel">
+            <div class="trendingProducts-group-item1"></div>
+            <div class="trendingProducts-group-item2"></div>
+            <div class="trendingProducts-group-item3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="brand-wrapper">
+      <div class="container">
+        <div class="group-brand owl-carousel">
+          <div class="brand">
+            <a href=""
+              ><img
+                src="./image/brand_1.jpg"
+                alt=""
+            /></a>
+          </div>
+          <div class="brand">
+            <a href=""
+              ><img
+                src="./image/brand_2.jpg"
+                alt=""
+            /></a>
+          </div>
+          <div class="brand">
+            <a href=""
+              ><img
+                src="./image/brand_3.jpg"
+                alt=""
+            /></a>
+          </div>
+          <div class="brand">
+            <a href=""
+              ><img
+                src="./image/brand_4.jpg"
+                alt=""
+            /></a>
+          </div>
+          <div class="brand">
+            <a href=""
+              ><img
+                src="./image/brand_5.jpg"
+                alt=""
+            /></a>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+          <!-- Start toast -->
+    <!-- <div class="toast-wrapper">
+      <div class="toast">
+        <div class="toast-header">
+          <strong class="mr-auto text-primary">Sản phảm đã được thêm</strong>
+        <small class="text-muted">Số lượng<span class="amout-toast"></span></small>
+        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+        </div>
+        <div class="toast-body">
+          
+        </div>
+      </div>
+    </div> -->
+   <!-- Close toast -->   
+    <footer>
+      <div class="container">
+        <div class="footer-element1">
+          <div class="logo">
+            <a href="index.html">
+              <img
+                src="./image/logo.png"
+                alt=""
+              />
+            </a>
+            <div class="about">
+              <p>
+                We are a team of designers and developers that create high
+                quality Magento, Prestashop, Opencart.
+              </p>
+            </div>
+            <div class="contact">
+              <ul>
+                <li><strong>Address:</strong> 4710-4890 Breckinridge USA</li>
+                <li><strong>Emali:</strong> support@plazathemes.com</li>
+                <li><strong>Call Us:</strong> 1-1001-234-5678</li>
+              </ul>
+            </div>
+          </div>
+          <nav class="information">
+            <div class="title-information"><h3>Information</h3></div>
+            <ul>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Wishlist</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Frequently Questions</a></li>
+            </ul>
+          </nav>
+          <nav class="category">
+            <div class="title-category"><h3>Categories</h3></div>
+            <ul>
+              <li><a href="">Lentil</a></li>
+              <li><a href="">Limes</a></li>
+              <li><a href="">Mangoes</a></li>
+              <li><a href="">Chickpea</a></li>
+              <li><a href="">Avocados</a></li>
+              <li><a href="">Cauliflower</a></li>
+            </ul>
+          </nav>
+          <div class="sign-up">
+            <div class="title-sign-up">
+              <h3>Sign Up To Newsletter</h3>
+            </div>
+            <div class="about"><p>Subscribe to get the latest news and updates from Safira</p></div>
+            <div class="search-email flex a-center">
+              <input type="text" placeholder="Your email address...">
+              <button class="subscribe">SUBSCRIBE</button>
+            </div>
+          </div>
+        </div>
+        <div class="crossbar"></div>
+        <div class="footer-element2 flex j-between">
+          <div class="copyright">
+            <p>Copyright © PlazaThemes. All Right Reserved.
+            <br>
+            Design by Plazathemes.com
+            </br>
+          </p>
+          </div>
+          <div class="credit">
+            <img src="" alt="" >
+          </div>
+        </div >
+      </div>
+    </footer>
+  
+  </body>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script> -->
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script> -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./js/owl.carousel.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script type="module" src="./js/newproducts.js"></script>
+  <script type="module" src="./js/cart_pane.js"></script>
+  <script type="module" src="./js/products-deal-of-the-weeks.js"></script>
+  <script src="./js/from-our-blog.js"></script>
+  <script src="./js/loadTime.js"></script>
+  <script src="./js/addScroll.js"></script>
+  <script type="module" src="./js/bestSeller.js"></script>
+  <script type="module" src="./js/ourProducts.js"></script>
+  <script type="module" src="./js/trendingProducts.js"></script>
+  <script src="./js/brand.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script type="module" src="./js/search_newProducts.js"></script>
+</html>
